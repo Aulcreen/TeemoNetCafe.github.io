@@ -1,43 +1,18 @@
-body{
-	background: black;
+
+
+header{
+background: black;
 }
 
-h1{
-color:white;
-
+menu{
+background: green;
+ }
+main{
+	background: green;
 }
+ 
+ 
+ footer{
 
-div{
-background-color: lightgreen;
-    width: 103%;
-    left:-150px;
-    padding: 2px;
-    margin: 100px;
-text-align: right;
-position: relative;
-}
-
-.main1{
-	 width: 15%;
-	 padding: 16px;
-    margin: 100px;
-    background-color: lightgreen;
-text-align: center;
-position: absolute;
-}
-.main2{
-	 width: 15%;
-	 padding: 16px;
-    margin: 100px;
-    background-color: lightgreen;
-text-align: center;
-
-}
-.main3{
-	 width: 15%;
-	 padding: 16px;
-    margin: 100px;
-    background-color: lightgreen;
-text-align: center;
-
-}
+ 	background: #02B875;
+ }
