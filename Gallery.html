@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<TITLE>HOME PAGE</TITLE>
+<TITLE>GALLERY</TITLE>
 <link rel="stylesheet" href="C:\Users\ITE32B-27\Desktop/Main.css" type="text/css" />
 <link rel="stylesheet" href="C:\Users\ITE32B-27\Desktop/bootstrap.css" type="text/css" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <div class="header">
@@ -41,34 +42,19 @@
   </div>
 </nav>
 </div>
-<br/>
-	<br/><br/>
-	<br/>
-	<br/>
-	<br/><br/>
-	<br/>
-	<br/>
-	<br/><br/>
-	<br/>
-	<br/>
-	<br/><br/>
-	<br/>
 
-<div class="main">
-	<table style="width:100%">
-  <tr class="nav-item">
-    <th><center> <a class="nav-link" href="ABOUT.html" target="_blank"><h1>Gallery</h1></a></center></th>
-    <th><center><img src="C:\Users\ITE32B-27\Desktop/logo.jpg" ></center></th> 
-    <th><a class="nav-link" href="ABOUT.html" target="_blank"><center><h1>Products</h1></a></center></th>
-  </tr>
-  <tr class="nav-item">
-    <td><center><img src="C:\Users\ITE32B-27\Desktop/logo.jpg" ></center></td>
-    <td><a class="nav-link" href="ABOUT.html" target="_blank"><center><h1>Service</h1></center></a></td>
-    <td><center><img src="C:\Users\ITE32B-27\Desktop/logo.jpg" ></center></td>
-  </tr>
+<h2 class="w3-center">Manual Slideshow</h2>
 
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="C:\Users\ITE32B-27\Desktop/you.png" style="width:100%" align="middle" >
+  <img class="mySlides" src="C:\Users\ITE32B-27\Desktop/logo.jpg" style="width:100%" align="middle">
+  <img class="mySlides" src="C:\Users\ITE32B-27\Desktop/face.png" style="width:100%" align="middle">
+  <img class="mySlides" src="C:\Users\ITE32B-27\Desktop/gg.png" style="width:100%" align="middle">
 
-</table>
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
 <br/>
 	<br/><br/>
 	<br/>
@@ -92,7 +78,25 @@
 <br/>
 <br/>
 <br/>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 <footer><a href="/ABOUT.html/">ABOUT</a></footer>
 </html>
