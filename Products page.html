@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Gallery</title>
+<title>Products</title>
 <link rel="stylesheet" href="Main.css" type="text/css" />
 <link rel="stylesheet" href="bootstrap.css" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 <body>
-<div class="header">
-	<img src="Flogo.png" > Net Cafe
-	
-
-</div>
+<img src= "logo.png">
+<br></br>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">TeemoNetCafe</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,60 +41,9 @@
 </div>
 
 
-<h2 class="w3-center">Manual Slideshow</h2>
+<h1>Products</h1>
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="you.png" style="width:100%" align="middle" >
-  <img class="mySlides" src="logo.jpg" style="width:100%" align="middle">
-  <img class="mySlides" src="face.png" style="width:100%" align="middle">
-  <img class="mySlides" src="gg.png" style="width:100%" align="middle">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
 
-<br/>
-	<br/><br/>
-	<br/>
-	<br/>
-	<br/><br/>
-	<br/>
-	<br/>
-	<br/><br/>
-	<br/>
-	<br/>
-	<br/><br/>
-	<br/>
-	
-</div>
-<div class="footer">
-	<img src="gg.png" height="42" width="42" align="right">
-	<img src="face.png" height="42" width="42" align="right">
-	<img src="you.png" height="42" width="42" align="right">
-
-</div>
-<br/>
-<br/>
-<br/>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
 </body>
-<footer><a href="/ABOUT.html/">ABOUT</a></footer>
 </html>

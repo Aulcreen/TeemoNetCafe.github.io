@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 700;
   line-height: 1.2;
-  color: inherit;
+  color: #ffffff;
 }
 
 h1, .h1 {
@@ -9223,10 +9223,7 @@ footer{
 
  	color:white;
  }
- h1{
 
- 	 background-color: #02B875;
- }
 
  a:link {
     background-color: #02B875;
